@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asisten Coding Edukatif</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="logo">
+        <i class="fas fa-code"></i>
+        <h1>Code<span>Mentor</span>AI</h1>
+      </div>
+      <p class="tagline">Asisten Coding Pintar untuk Developer</p>
+    </header>
+
+    <main class="app-main">
+      <div class="code-section">
+        <div class="code-toolbar">
+          <select id="language-selector">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="c++">C++</option>
+            <option value="php">PHP</option>
+          </select>
+          <button id="run-btn" class="btn-primary">
+            <i class="fas fa-play"></i> Analisis Kode
+          </button>
+        </div>
+        <div id="editor" class="code-editor"></div>
+        <textarea id="task-input" placeholder="Apa yang ingin Anda capai dengan kode ini? (opsional)"></textarea>
+      </div>
+
+      <div class="result-section">
+        <div class="result-header">
+          <h2><i class="fas fa-lightbulb"></i> Hasil Analisis</h2>
+          <div class="loader" id="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+          </div>
+        </div>
+        <div id="analysis-result" class="analysis-content"></div>
+      </div>
+    </main>
+
+    <div class="feature-cards">
+      <div class="feature-card">
+        <i class="fas fa-bug"></i>
+        <h3>Debugging</h3>
+        <p>Temukan dan perbaiki bug dalam kode Anda</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Pembelajaran</h3>
+        <p>Penjelasan konsep secara mendetail</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-rocket"></i>
+        <h3>Optimasi</h3>
+        <p>Saran untuk meningkatkan performa kode</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.2/ace.js"></script>
+  <script src="/js/code-editor.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
